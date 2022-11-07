@@ -1,0 +1,45 @@
+@import "../styles/variables.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    align-items: center; 
+    width: 100%;
+    gap: 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.art{
+    width: 50%;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card{
+    border: 1px solid $white;
+    height: fit-content;
+   h1{
+    font-size: 30px;
+    border: 1px solid $white;
+    padding: 8px;
+   } 
+   p{
+    color: $gray;
+    padding: 8px;
+   }
+}

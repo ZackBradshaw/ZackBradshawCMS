@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    align-items: center;
+    width: 100%;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.title{
+    justify-self: flex-start;
+    span{
+        color: $pink;
+    }
+}
+
+.viewAll{
+    justify-self: flex-end;
+    border-style: none;
+    background-color: transparent;
+    color: $white;
+    text-decoration: none;
+}
+
+.projects{
+    display: flex;
+    gap: 30px;
+}
+

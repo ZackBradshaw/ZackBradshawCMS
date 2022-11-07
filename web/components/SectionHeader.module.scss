@@ -1,0 +1,13 @@
+@import "../styles/variables.scss";
+
+.header{
+    display: flex;
+    margin-right: auto;
+    text-align: flex-start;
+    width: 100%;
+    color: $white;
+    span{
+        color: $pink;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,33 @@
+@import '../styles/variables.scss';
+
+.container{
+    display: flex;
+    color: $white;
+}
+
+.tech{
+    text-align: center;
+    width: 100%;
+    &>*{
+        width: 100% !important;
+    }
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.description{
+    color: $gray;
+}
+
+.button{
+    background-color: transparent;
+    color: $white;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid $pink;
+}

@@ -1,0 +1,23 @@
+@import "../styles/variables.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    color: $white;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.button{
+    background-color: transparent;
+    color: $white;
+    margin: 10px;
+    border-style: none;
+}

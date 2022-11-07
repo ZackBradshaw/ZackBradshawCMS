@@ -1,0 +1,76 @@
+@import "../styles/variables.scss";
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    color: $white;
+    width: 100%;
+    justify-content: center;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    align-self: flex-end;
+}
+
+.name {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.info{
+    height: 100px;
+}
+
+.button{
+    border-style: none;
+    color: $white;
+    font-size: 1.5rem;
+    margin: 5px;
+    background-color: transparent;
+    border: 1px solid $pink;
+    width: fit-content;
+    padding: 5px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo {
+    font-size: 5rem;
+}
+
+.status {
+    margin: 5px;
+    color: $gray;
+    font-size: 1.5rem;
+    span{
+        color: $white;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+   .container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   }
+
+   .about{
+    width: 100%;    
+    text-align: center;
+   }
+
+   .button{
+    margin: auto;
+   }
+}
