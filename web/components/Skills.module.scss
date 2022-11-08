@@ -15,26 +15,25 @@
 }
 
 .art{
-    width: 50%;
 }
 
 .skills{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 1rem;
 }
 
 .column{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1rem;
 }
 
 .card{
-    border: 1px solid $white;
+    border: 1px solid $gray;
     height: fit-content;
    h1{
-    font-size: 30px;
+    font-size: 1rem;
     border: 1px solid $white;
     padding: 8px;
    } 

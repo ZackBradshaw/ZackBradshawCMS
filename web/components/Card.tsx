@@ -7,7 +7,7 @@ const Card = (Card: ICard) => {
   return (
     <div className={styles.container}>
       <ASCIIBox>
-        <img src={Card.img}></img>
+        <img className={styles.img} src={Card.img}></img>
         <div className={styles.tech}>
           <ASCIIBox>
             <h3>{Card.tech}</h3>

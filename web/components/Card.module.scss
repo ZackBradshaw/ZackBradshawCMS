@@ -8,6 +8,7 @@
 .tech{
     text-align: center;
     width: 100%;
+    font-size: .75rem;
     &>*{
         width: 100% !important;
     }
@@ -16,18 +17,38 @@
 .cardInfo{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: .5rem;
     padding: 15px;
+}
+
+.title{
+    font-size: 1rem;
 }
 
 .description{
     color: $gray;
+    font-size: .75rem;
 }
 
 .button{
     background-color: transparent;
     color: $white;
-    font-size: 20px;
+    font-size: .75rem;
     padding: 5px;
     border: 1px solid $pink;
+}
+
+.img{
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (max-width: 1024px){
+    .container{
+        min-width: 180px;
+    } 
 }

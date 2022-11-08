@@ -30,8 +30,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className={styles.break}></div>
-        <p className={styles.copyright}>Lorem, ipsum dolor.</p>
       </footer>
     </div>
   );

@@ -12,9 +12,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 32px 0px 8px;
-    // position: relative;
     width: 100%;
     height: 10%;
+    overflow: hidden;
+    z-index: 3;
+    background-color: $background;
 }
 
 .navitems{
@@ -28,7 +30,6 @@
 
 .navitem {
     width: fit-content;
-    height: 5%;
     a {
         color: $white;
         text-decoration: none;
@@ -48,3 +49,59 @@
     align-self: flex-start;
     width: fit-content;
 }
+
+.burger{
+    display: none;
+}
+
+.menuNav{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+
+.navitems{
+    display: none;
+}
+
+.menuNav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 1;
+        transition: 1s;
+        width: 100%;
+        background-color: $background;
+        top: -50%;
+        justify-content: center;
+        gap: 3rem;
+        box-sizing: border-box;
+
+    &.open{
+        height: 100%;
+        top: 0;
+    }
+    &.closed{
+        height: 0;
+    }
+}
+
+.burger{
+    display: block;
+    z-index: 2;
+}
+
+.link{
+    display: flex;
+    gap: 10px;
+    span{
+        font-size: 4rem;
+
+    }
+    p{
+        font-size: 4rem;
+        color: $gray;
+    }
+}
+}
+
