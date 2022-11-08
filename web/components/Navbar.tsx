@@ -10,6 +10,11 @@ const Navbar = () => {
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
   };
+
+  const closeMenu = () => {
+    setNavbarOpen(false);
+  };
+
   return (
     <div className={styles.container}>
       <nav className={styles.navbar}>
@@ -51,7 +56,7 @@ const Navbar = () => {
           navbarOpen ? styles.open : styles.closed
         }`}
       >
-        <li className={styles.navitem}>
+        <li className={styles.navitem} onClick={() => closeMenu()}>
           <Link href="/projects" passHref>
             <div className={styles.link}>
               <span className={styles.itemIcon}>#</span>
@@ -59,7 +64,7 @@ const Navbar = () => {
             </div>
           </Link>
         </li>
-        <li className={styles.navitem}>
+        <li className={styles.navitem} onClick={() => closeMenu()}>
           <Link href="/#about-me" passHref>
             <div className={styles.link}>
               <span className={styles.itemIcon}>#</span>
@@ -67,7 +72,7 @@ const Navbar = () => {
             </div>
           </Link>
         </li>
-        <li className={styles.navitem}>
+        <li className={styles.navitem} onClick={() => closeMenu()}>
           <Link href="/#contacts" passHref>
             <div className={styles.link}>
               <span className={styles.itemIcon}>#</span>
