@@ -38,7 +38,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     position: relative;
-    width: 95vw;
     min-height: 100vh;
     background-color: $background;
     margin: 0 auto;
@@ -62,6 +61,7 @@ table {
 html, body {
 --scroll-behavior: smooth!important;
 scroll-behavior: smooth!important;
+box-sizing: border-box!important;
 }
 
 :before, *:after {
