@@ -3,11 +3,9 @@
 .container {
     display: flex;
     position: absolute;
-    width: 100%;
     height: 18vh;
     background-color: $background;
     align-items: center;
-    justify-content: center;
     color: $white;
     bottom: 0;
 }
@@ -15,43 +13,39 @@
 .footerContainer{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 1024px;
     height: 6vh;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contact{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    width: 30%;
+    gap: .5rem;
+    width: 50%;
     height: 80%;
-    margin-right: auto;
     h2{
         color: $gray;
-        font-size: 15px;
+        font-size: 1rem;
     }
 }
 
 .contactInfo{
     display: flex;
     flex-direction: row;
-    gap: 36px;
+    gap: 1rem;
     align-items: center;
 }
 
 .socials{
     display: flex;
     flex-direction: column;
-    width: 150px;
-    height: 75px;
-    gap: 10px;
+    gap: .3rem;
 }
 
 .socialLinks{
     display: flex;
     flex-direction: row;
-    width: 150px;
 }
 
 .copyright {
@@ -61,7 +55,21 @@
     width: 200px;
 }
 
-.break {
-    flex-basis: 100%;
-    height: 0;
+@media only screen and (max-width: 1024px) {
+
+    .container{
+        justify-content: center;
+    }
+
+    .contactInfo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerContainer{
+        width: 100%;
+        padding: 3rem;
+
+    }
+
 }

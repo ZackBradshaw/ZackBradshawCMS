@@ -44,7 +44,6 @@ const projects = ({ posts }) => {
                         img={urlFor(mainImage).width(50).url()}
                         description="Example project for testing perposes"
                         button="Live <~>"
-                        hidden={false}
                       />
                     </Link>
                   </div>
@@ -60,7 +59,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/299/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -68,7 +66,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -76,7 +73,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -84,7 +80,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -92,7 +87,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
           </div>
         </div>
@@ -105,7 +99,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -113,7 +106,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -121,7 +113,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -129,7 +120,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
             <Card
               tech="React Next TS SCSS"
@@ -137,7 +127,6 @@ const projects = ({ posts }) => {
               img="https://via.placeholder.com/300/200"
               description="Example project for testing perposes"
               button="Live <~>"
-              hidden={false}
             />
           </div>
         </div>

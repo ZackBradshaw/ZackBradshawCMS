@@ -3,11 +3,17 @@
 .header{
     display: flex;
     margin-right: auto;
-    text-align: flex-start;
     width: 100%;
+    align-items: center;
     color: $white;
     span{
         color: $pink;
         font-size: 30px;
     }
+}
+
+.line{
+    background-color: $pink;
+    height: .2rem;
+    width: 30;
 }

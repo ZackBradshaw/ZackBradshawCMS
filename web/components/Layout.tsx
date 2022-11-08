@@ -20,9 +20,11 @@ const Layout = ({ children, title = "ZackBradshaw" }: Props) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={styles.container}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className={styles.flex}>
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </div>
     </div>
   );

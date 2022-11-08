@@ -7,7 +7,7 @@ const SectionHeader = (header: IHeader) => {
     <div className={styles.header}>
       <span>#</span>
       <h1 className={styles.title}>{header.title}</h1>
-      <span>-------------------------</span>
+      <div className={styles.line}></div>
     </div>
   );
 };
