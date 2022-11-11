@@ -9,10 +9,8 @@ const Contacts = () => {
       <SectionHeader title="contacts" />
       <div className={styles.content}>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, fugit
-          doloribus, ducimus iusto voluptatum rem hic tempora, maiores molestiae
-          corporis quos? Ipsa corrupti maiores sit quidem fugiat pariatur earum
-          magnam.
+          Here are my prefered forms of communication im intrested in listening
+          to any opportunities and or questions you may have for me
         </p>
         <div className={styles.contactInfo}>
           <h1>Message me here</h1>

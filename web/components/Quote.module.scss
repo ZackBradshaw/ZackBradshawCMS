@@ -7,12 +7,48 @@
     margin: auto;
 }
 
+.container::after {
+    content: '"';
+    position: relative;
+    left: 85%;
+    top: -100px;
+    font-weight: 900;
+    font-size: 5rem;
+    color:$gray;
+    width: fit-content;
+    height: 3rem;
+    background-color: $background;
+    border-radius: 1rem;
+}
+
+.container::before {
+    content: '"';
+    position: relative;
+    right: -8px;
+    top: 20px;
+    font-weight: 900;
+    font-size: 5rem;
+    color: $gray;
+    width: fit-content;
+    height: 3rem;
+    background-color: $background;
+    z-index: 2;
+    border-radius: .2rem;
+}
 .quoteText{
-    margin: 15px;
+    margin: 1.5rem;
     font-size: 1.5rem;
 }
 
 .author{
-    margin: 10px;
+    margin: 1.25rem;
     font-size: 1rem;
+    align-items: flex-end;
+    font-size: 1.5rem;
+}
+
+.authortag{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }

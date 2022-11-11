@@ -10,43 +10,26 @@ const Skills = () => {
       <div className={styles.content}>
         <div className={styles.art}></div>
         <div className={styles.skills}>
-          <div className={styles.card}>
-            <h1>Tech Name</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-              possimus!
-            </p>
-          </div>
           <div className={styles.column}>
             <div className={styles.card}>
-              <h1>Tech Name</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, possimus!
-              </p>
+              <h1>FrameWorks/Middleware</h1>
+              <p>React Next Express Mongodb Mongoose Pug Sanity</p>
             </div>
             <div className={styles.card}>
-              <h1>Tech Name</h1>
+              <h1>Favorite Tools</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, possimus!
+                Unreal Blender Photoshop VSCode Rider Neovim WSL Terminal FishCL
               </p>
             </div>
           </div>
           <div className={styles.column}>
             <div className={styles.card}>
-              <h1>Tech Name</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, possimus!
-              </p>
+              <h1>Languages</h1>
+              <p>Typescript Javascript CSS SCSS Blueprints</p>
             </div>
             <div className={styles.card}>
-              <h1>Tech Name</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Officiis, possimus!
-              </p>
+              <h1>Other</h1>
+              <p>HTML MQL </p>
             </div>
           </div>
         </div>
