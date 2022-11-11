@@ -11,10 +11,6 @@ const Footer = () => {
             <h1>Zack</h1>
             <h2>zackzbradshaw@gmail.com</h2>
           </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel,
-            cupiditate?
-          </p>
         </div>
         <div className={styles.socials}>
           <h1>Media</h1>

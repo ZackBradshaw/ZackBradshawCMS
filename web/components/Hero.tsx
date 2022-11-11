@@ -6,13 +6,11 @@ const Hero = () => {
   return (
     <div className={styles.container}>
       <div className={styles.about}>
-        {/* <h1 className={styles.name}>Zack</h1> */}
-        <p className={styles.info}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto itaque
-          facere reprehenderit. Laborum blanditiis at nulla natus, corrupti
-          temporibus accusamus. Reprehenderit sint consequatur illo ratione
-          doloremque exercitationem labore quis suscipit.
-        </p>
+        <div className={styles.info}>
+          <h1>
+            Hi i'm Zack i <span>enjoy</span> doing <span>difficult</span> things
+          </h1>
+        </div>
 
         <button className={styles.button}>Contact me !!</button>
       </div>

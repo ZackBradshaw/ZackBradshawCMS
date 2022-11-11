@@ -10,9 +10,11 @@ const Quote = () => {
           With great power comes great electricity bill
         </h1>
       </ASCIIBox>
-      <ASCIIBox>
-        <h2 className={styles.author}>- Dr. Who</h2>
-      </ASCIIBox>
+      <div className={styles.authortag}>
+        <ASCIIBox>
+          <h2 className={styles.author}>- Dr. Who</h2>
+        </ASCIIBox>
+      </div>
     </div>
   );
 };

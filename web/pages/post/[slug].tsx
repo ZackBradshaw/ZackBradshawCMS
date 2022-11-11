@@ -36,9 +36,11 @@ const ptComponents = {
   },
 };
 
-const Post = (props) => {
+const Post = (props: { post?: IPost }) => {
   console.log(props);
-  const post: IPost = props.post;
+  const post: IPost = props.post ?? {
+    title: "Missing title",
+  };
   return (
     <article>
       <h1>{post.title ?? "missing title"}</h1>
