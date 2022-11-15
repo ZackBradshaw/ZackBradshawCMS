@@ -8,7 +8,7 @@ import AboutMe from "../components/AboutMe";
 import styles from "../styles/Home.module.scss";
 import Contacts from "../components/Contacts";
 
-const IndexPage = () => (
+const Index = () => (
   <Layout title="Home | Zack.dev">
     <Hero />
     <Quote />
@@ -19,4 +19,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default Index;

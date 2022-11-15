@@ -8,7 +8,7 @@ import styles from "../styles/projects.module.scss";
 import groq from "groq";
 import client from "../client";
 
-const projects = ({ posts }) => {
+const Projects = ({ posts }) => {
   return (
     <Layout title="Projects | Zack.dev">
       <div className={styles.container}>
@@ -146,4 +146,4 @@ export async function getStaticProps() {
   };
 }
 
-export default projects;
+export default Projects;
