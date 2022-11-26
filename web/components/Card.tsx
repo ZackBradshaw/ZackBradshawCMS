@@ -2,24 +2,49 @@ import React from "react";
 import ASCIIBox from "./ASCIIBox";
 import styles from "./Card.module.scss";
 import { ICard } from "../interfaces/Card";
+import { PortableText } from "@portabletext/react";
+import urlFor from "./../utils/urlfor";
 
-const Card = (Card: ICard) => {
+const ptComponents = {
+  types: {
+    image: ({ value }) => {
+      if (!value?.asset?._ref) {
+        return null;
+      }
+      return (
+        <img
+          alt={value.alt || " "}
+          loading="lazy"
+          src={
+            urlFor(value)
+              .width(320)
+              .height(240)
+              .fit("max")
+              .auto("format") as unknown as string
+          }
+        />
+      );
+    },
+  },
+};
+
+const Card = ({ tech, title, img, description }: ICard) => {
+  console.log("Desc", description);
   return (
     <div className={styles.container}>
       <ASCIIBox>
-        <img className={styles.img} src={Card.img}></img>
+        <div className={styles.imgcontainer}>
+          <img className={styles.img} src={img}></img>
+        </div>
         <div className={styles.tech}>
           <ASCIIBox>
-            <h3>{Card.tech}</h3>
+            <PortableText value={tech} components={ptComponents} />
           </ASCIIBox>
         </div>
         <div className={styles.cardInfo}>
-          <h1 className={styles.title}>{Card.title}</h1>
-          <p className={styles.description}>{Card.description}</p>
-          <div>
-            <button className={styles.button} aria-hidden={Card.hidden}>
-              {Card.button}
-            </button>
+          <h1 className={styles.title}>{title}</h1>
+          <div className={styles.description}>
+            <PortableText value={description} components={ptComponents} />
           </div>
         </div>
       </ASCIIBox>

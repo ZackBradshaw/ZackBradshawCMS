@@ -8,15 +8,19 @@
   },
   "dependencies": {
     "@portabletext/react": "^2.0.0",
+    "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
     "eslint-config-next": "^13.0.3",
+    "get-youtube-id": "^1.0.1",
     "groq": "^2.33.2",
     "hamburger-react": "^2.5.0",
     "next": "^13.0.3",
+    "next-sanity-image": "^5.0.0",
     "next-transpile-modules": "^9.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-youtube": "^10.0.0"
   },
   "devDependencies": {
     "@types/node": "^12.20.55",
