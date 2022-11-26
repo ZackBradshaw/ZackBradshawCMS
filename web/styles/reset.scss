@@ -63,6 +63,7 @@ html, body {
 scroll-behavior: smooth!important;
 box-sizing: border-box!important;
 width: 100vw !important;
+margin: 0 auto ;
 }
 
 :before, *:after {
@@ -72,4 +73,8 @@ width: 100vw !important;
 #__next {
 width: 90vw;
 margin: 0 auto;
+}
+
+:root{
+    overflow-x: hidden;
 }
