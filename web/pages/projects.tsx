@@ -32,6 +32,7 @@ const Projects = ({ posts }) => {
                   publishedAt = "",
                   categories = "",
                   mainImage = "",
+                  projectLink = "",
                 }: any) =>
                   slug && (
                     <div className={styles.projects} key={_id}>
@@ -40,6 +41,7 @@ const Projects = ({ posts }) => {
                         title={title}
                         img={urlFor(mainImage).url()}
                         description={body}
+                        link={projectLink}
                       />
                     </div>
                   )
