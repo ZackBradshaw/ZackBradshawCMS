@@ -9,7 +9,7 @@ import groq from "groq";
 import client from "../client";
 
 const Projects = ({ posts }) => {
-  console.log("posts", posts);
+  // console.log("posts", posts);
   return (
     <Layout title="Projects | Zack.dev">
       <div className={styles.container}>
@@ -30,25 +30,17 @@ const Projects = ({ posts }) => {
                   slug = "",
                   body = "",
                   publishedAt = "",
-                  catagories = "",
+                  categories = "",
                   mainImage = "",
                 }: any) =>
                   slug && (
-                    // <li key={_id}>
-                    //   <Link href="/post/[slug]" as={`/post/${slug.current}`}>
-                    //     <p>{title}</p>
-                    //   </Link>{" "}
-                    //   ({new Date(publishedAt).toDateString()})
-                    // </li>
                     <div className={styles.projects} key={_id}>
-                      {/* <Link href="/post/[slug]" as={`/post/${slug.current}`}> */}
                       <Card
-                        tech={catagories}
+                        categories={categories}
                         title={title}
                         img={urlFor(mainImage).url()}
                         description={body}
                       />
-                      {/* </Link> */}
                     </div>
                   )
               )}
@@ -62,7 +54,7 @@ const Projects = ({ posts }) => {
 export async function getStaticProps() {
   const posts = await client.fetch(groq`
       
-      *[_type == "post" && publishedAt < now()]{ "catagories": catagories[]->title, ...} | order(publishedAt desc 
+      *[_type == "post" && publishedAt < now()]{ "categories": coalesce(categories[]->title, []), ...} | order(publishedAt desc 
 )
     `);
   return {

@@ -25,7 +25,6 @@ const AboutMe = () => {
           I particate in game jams biannually were i have 5 days to create a
           game (usually in unreal)
         </p>
-        <p>I believe effort is its own reward</p>
         <h2>I'm self taught</h2>
 
         <p>

@@ -28,8 +28,8 @@ const ptComponents = {
   },
 };
 
-const Card = ({ tech, title, img, description }: ICard) => {
-  console.log("Desc", description);
+const Card = ({ link, categories, title, img, description }: ICard) => {
+  // console.log("Desc", description);
   return (
     <div className={styles.container}>
       <ASCIIBox>
@@ -38,7 +38,9 @@ const Card = ({ tech, title, img, description }: ICard) => {
         </div>
         <div className={styles.tech}>
           <ASCIIBox>
-            <PortableText value={tech} components={ptComponents} />
+            {categories.map((t) => (
+              <p key={t}>{t}</p>
+            ))}
           </ASCIIBox>
         </div>
         <div className={styles.cardInfo}>
@@ -46,6 +48,7 @@ const Card = ({ tech, title, img, description }: ICard) => {
           <div className={styles.description}>
             <PortableText value={description} components={ptComponents} />
           </div>
+          <a href={link}>Live {`<~>`}</a>
         </div>
       </ASCIIBox>
     </div>
