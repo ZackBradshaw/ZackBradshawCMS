@@ -1,8 +1,12 @@
+import { TypedObject } from "@portabletext/types";
+
 export interface ICard{
-    tech?: string;
+    categories?: string[];
     title?: string;
     img?: string;
-    description?: string;
+    description?: TypedObject | TypedObject[];
     button?: string;
     hidden?: boolean;
+    link?: string;
 }
+

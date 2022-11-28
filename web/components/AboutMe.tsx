@@ -14,14 +14,17 @@ const AboutMe = () => {
         </p>
         <h2>I'm self motivated</h2>
         <p>
-          I attend opensgf every tuesday a code for america brigade that's focus
-          is to create websites for nonprofit orginzations
+          I co-orginze opensgf a code for america brigade group of volunteer
+          coders that's focus is to create websites and web apps for nonprofit
+          orginzations
+        </p>
+        <p>
+          I teach unreal game development virtually on mondays and thursdays{" "}
         </p>
         <p>
           I particate in game jams biannually were i have 5 days to create a
           game (usually in unreal)
         </p>
-        <p>I believe effort is its own reward</p>
         <h2>I'm self taught</h2>
 
         <p>

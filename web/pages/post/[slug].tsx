@@ -3,6 +3,19 @@ import imageUrlbuilder from "@sanity/image-url";
 import { PortableText } from "@portabletext/react";
 import urlFor from "../../utils/urlfor";
 // [slug].js
+import React from "react";
+import getYouTubeId from "get-youtube-id";
+import YouTube from "react-youtube";
+
+const serializers = {
+  types: {
+    youtube: ({ node }) => {
+      const { url } = node;
+      const id = getYouTubeId(url);
+      return <YouTube videoId={id} />;
+    },
+  },
+};
 
 import client from "../../client";
 interface IPost {
@@ -37,7 +50,7 @@ const ptComponents = {
 };
 
 const Post = (props: { post?: IPost }) => {
-  console.log(props);
+  // console.log(props);
   const post: IPost = props.post ?? {
     title: "Missing title",
   };
@@ -62,6 +75,7 @@ const Post = (props: { post?: IPost }) => {
     </article>
   );
 };
+
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
   "name": author->name,
