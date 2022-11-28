@@ -9,3 +9,4 @@ export interface ICard{
     hidden?: boolean;
     link?: string;
 }
+
