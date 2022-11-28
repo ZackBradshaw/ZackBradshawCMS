@@ -38,7 +38,7 @@ const Card = ({ link, categories, title, img, description }: ICard) => {
         </div>
         <div className={styles.tech}>
           {categories.map((category) => (
-            <p key={t}>{t}</p>
+            <p key={category}>{category}</p>
           ))}
         </div>
         <div className={styles.cardInfo}>
