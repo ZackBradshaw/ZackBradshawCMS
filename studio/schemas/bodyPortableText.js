@@ -1,4 +1,3 @@
-// bodyPortableText.js
 export default {
   name: "bodyPortableText",
   type: "array",

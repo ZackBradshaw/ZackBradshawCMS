@@ -22,7 +22,7 @@ const Projects = ({ posts }) => {
         <div className={styles.section}>
           <SectionHeader title="web-dev" />
           <div className={styles.projects}>
-            {posts.length > 0 &&
+            {/* {posts.length > 0 &&
               posts.map(
                 ({
                   _id,
@@ -45,7 +45,7 @@ const Projects = ({ posts }) => {
                       />
                     </div>
                   )
-              )}
+              )} */}
           </div>
         </div>
       </div>

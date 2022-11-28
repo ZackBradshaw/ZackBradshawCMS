@@ -14,7 +14,7 @@ const Index = ({ posts }) => (
   <Layout title="Home | Zack.dev">
     <Hero />
     <Quote />
-    <ProjectsPrev posts={posts} />
+    {/* <ProjectsPrev posts={posts} /> */}
     <Skills />
     <AboutMe />
     <Contacts />

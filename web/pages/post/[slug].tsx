@@ -50,7 +50,7 @@ const ptComponents = {
 };
 
 const Post = (props: { post?: IPost }) => {
-  console.log(props);
+  // console.log(props);
   const post: IPost = props.post ?? {
     title: "Missing title",
   };
