@@ -3,7 +3,7 @@
 - Created using npm create next-app
 ## Build setup
 ```
-#For next.js app
+# for next.js app
 $cd /web
 
 # install dependencies
