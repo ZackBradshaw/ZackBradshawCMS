@@ -1,7 +1,7 @@
 import { TypedObject } from "@portabletext/types";
-
+import { ICategory } from "./IPost";
 export interface ICard{
-    categories?: string[];
+    categories: string[]
     title?: string;
     img?: string;
     description?: TypedObject | TypedObject[];
