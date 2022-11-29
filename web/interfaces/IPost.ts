@@ -12,7 +12,7 @@ export interface IPost {
     mainImage?: IMainImage;
     slug?: ISlug;
     title?: string;
-    projectLink? string;
+    projectLink?: string;
   }
   export interface IAuthor {
     _ref: string;

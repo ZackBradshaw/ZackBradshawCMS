@@ -8,7 +8,7 @@ const Hero = () => {
       <div className={styles.about}>
         <div className={styles.info}>
           <h1>
-            Hi i'm Zack i <span>enjoy</span> doing <span>difficult</span> things
+            Hi I'm Zack I <span>enjoy</span> doing <span>difficult</span> things
           </h1>
         </div>
 
