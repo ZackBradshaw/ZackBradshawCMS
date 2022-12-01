@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Hero.module.scss";
 import ASCIIBox from "./ASCIIBox";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -12,7 +13,9 @@ const Hero = () => {
           </h1>
         </div>
 
-        <button className={styles.button}>Contact me !!</button>
+        <Link href="/#contacts" className={styles.button}>
+          Contact me !!
+        </Link>
       </div>
       <div className={styles.profile}>
         <span className={styles.photo}>¯\_(ツ)_/¯</span>

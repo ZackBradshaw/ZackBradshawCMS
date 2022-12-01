@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     gap: .2rem;
-    padding: .1rem;
+    padding: 1rem;
     flex-wrap: wrap;
     width: fit-content;
     h1{
@@ -37,6 +37,7 @@
 .link{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 

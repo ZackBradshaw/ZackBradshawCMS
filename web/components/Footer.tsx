@@ -15,13 +15,19 @@ const Footer = () => {
         <div className={styles.socials}>
           <h1>Media</h1>
           <div className={styles.socialLinks}>
-            <Link href="#" className={styles.socialLink}>
+            <Link
+              href="https://discord.com/users/159279522603204608"
+              className={styles.socialLink}
+            >
               <img src="../assets/Discord.svg"></img>
             </Link>
             <Link href="#" className={styles.socialLink}>
               <img src="../assets/Email.svg"></img>
             </Link>
-            <Link href="#" className={styles.socialLink}>
+            <Link
+              href="https://github.com/ZackBradshaw"
+              className={styles.socialLink}
+            >
               <img src="../assets/Github.svg"></img>
             </Link>
           </div>
