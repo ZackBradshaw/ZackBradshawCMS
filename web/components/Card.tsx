@@ -29,7 +29,7 @@ const ptComponents = {
 };
 
 const Card = ({ link, categories, title, img, description }: ICard) => {
-  // console.log("Desc", description);
+  console.log("categories", categories);
   return (
     <div className={styles.container}>
       <ASCIIBox>
@@ -37,9 +37,8 @@ const Card = ({ link, categories, title, img, description }: ICard) => {
           <img className={styles.img} src={img}></img>
         </div>
         <div className={styles.tech}>
-          {categories.map((category) => (
-            <p key={category}>{category}</p>
-          ))}
+          {categories &&
+            categories.map((category) => <p key={category}>{category}</p>)}
         </div>
         <div className={styles.cardInfo}>
           <h1 className={styles.title}>{title}</h1>

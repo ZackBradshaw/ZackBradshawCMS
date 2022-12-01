@@ -13,19 +13,20 @@ const Skills = () => {
           <div className={styles.column}>
             <div className={styles.card}>
               <h1>FrameWorks/Middleware</h1>
-              <p>React Next Express Mongodb Mongoose Pug Sanity</p>
+              <p>React, Next, Express, Mongodb, Mongoose, Pug, Sanity</p>
             </div>
             <div className={styles.card}>
               <h1>Favorite Tools</h1>
               <p>
-                Unreal Blender Photoshop VSCode Rider Neovim WSL Terminal FishCL
+                Unreal, Blender, Photoshop, VSCode, Rider, Neovim, WSL,
+                Terminal, FishCL
               </p>
             </div>
           </div>
           <div className={styles.column}>
             <div className={styles.card}>
               <h1>Languages</h1>
-              <p>Typescript Javascript CSS SCSS Blueprints</p>
+              <p>Typescript, Javascript, CSS, SCSS, Unreal Blueprints</p>
             </div>
             <div className={styles.card}>
               <h1>Other</h1>

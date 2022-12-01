@@ -9,25 +9,30 @@ import styles from "../styles/Home.module.scss";
 import Contacts from "../components/Contacts";
 import client from "../client";
 import groq from "groq";
+import { IPost } from "../interfaces/IPost";
 
-const Index = ({ posts }) => (
-  <Layout title="Home | Zack.dev">
-    <Hero />
-    <Quote />
-    {/* <ProjectsPrev posts={posts} /> */}
-    <Skills />
-    <AboutMe />
-    <Contacts />
-  </Layout>
-);
+const Index = ({ posts }: { posts: IPost[] }) => {
+  console.log("posts", posts);
+  return (
+    <Layout title="Home | Zack.dev">
+      <Hero />
+      <Quote />
+      <ProjectsPrev posts={posts} />
+      <Skills />
+      <AboutMe />
+      <Contacts />
+    </Layout>
+  );
+};
 
 export async function getStaticProps() {
   const posts = await client.fetch(groq`
       
-      *[_type == "post" && publishedAt < now()]{ "catagories": catagories[]->title, ...} | order(publishedAt desc 
+      *[_type == "post" && publishedAt < now()]
+      { "categories": categories[]->title, ...} 
+      | order(publishedAt desc 
 )
     `);
-
   return {
     props: {
       posts,

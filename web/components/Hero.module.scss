@@ -37,12 +37,13 @@
 .button{
     border-style: none;
     color: $white;
+    text-decoration: none;
     font-size: 1.5rem;
     margin: 5px;
     background-color: transparent;
     border: 1px solid $pink;
     width: fit-content;
-    padding: 5px;
+    padding: 15px;
 }
 
 .profile{
@@ -86,4 +87,10 @@
    .button{
     margin: auto;
    }
+
+.photo {
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-align: center;
+}
 }

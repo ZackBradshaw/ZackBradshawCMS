@@ -14,14 +14,17 @@ const Contacts = () => {
         </p>
         <div className={styles.contactInfo}>
           <h1>Message me here</h1>
-          <Link href="#" className={styles.link}>
+          <Link
+            href="https://discord.com/users/159279522603204608"
+            className={styles.link}
+          >
             <img src="../assets/Discord.svg" alt="" />
             <h2>zackbradshaw#7647</h2>
           </Link>
-          <Link href="#" className={styles.link}>
+          <div className={styles.link}>
             <img src="../assets/Email.svg" alt="" />
             <h2>Zackzbradshaw@gmail.com</h2>
-          </Link>
+          </div>
         </div>
       </div>
     </div>

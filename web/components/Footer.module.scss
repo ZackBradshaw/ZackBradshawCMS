@@ -2,13 +2,13 @@
 
 .container {
     display: flex;
-    position: absolute;
     height: 8vh;
     background-color: $background;
     align-items: center;
     color: $white;
     bottom: 0;
 }
+
 
 .footerContainer{
     display: flex;
@@ -64,11 +64,12 @@
     .contactInfo {
         flex-direction: column;
         text-align: center;
+        gap: 0;
     }
 
     .footerContainer{
         width: 100%;
-        padding: 3rem;
+        padding: 2rem;
 
     }
 
