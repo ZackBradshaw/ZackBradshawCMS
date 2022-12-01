@@ -18,6 +18,7 @@ const Footer = () => {
             <Link
               href="https://discord.com/users/159279522603204608"
               className={styles.socialLink}
+              target="_blank"
             >
               <img src="../assets/Discord.svg"></img>
             </Link>
@@ -27,6 +28,7 @@ const Footer = () => {
             <Link
               href="https://github.com/ZackBradshaw"
               className={styles.socialLink}
+              target="_blank"
             >
               <img src="../assets/Github.svg"></img>
             </Link>

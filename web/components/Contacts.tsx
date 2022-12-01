@@ -17,6 +17,7 @@ const Contacts = () => {
           <Link
             href="https://discord.com/users/159279522603204608"
             className={styles.link}
+            target="_blank"
           >
             <img src="../assets/Discord.svg" alt="" />
             <h2>zackbradshaw#7647</h2>

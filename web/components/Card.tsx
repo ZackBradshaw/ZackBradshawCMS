@@ -45,7 +45,9 @@ const Card = ({ link, categories, title, img, description }: ICard) => {
           <div className={styles.description}>
             <PortableText value={description} components={ptComponents} />
           </div>
-          <a href={link}>Live {`<~>`}</a>
+          <a href={link} target="_blank">
+            Live {`<~>`}
+          </a>
         </div>
       </ASCIIBox>
     </div>
