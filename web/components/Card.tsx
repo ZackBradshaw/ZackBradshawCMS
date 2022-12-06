@@ -32,7 +32,7 @@ const Card = ({ link, categories, title, img, description }: ICard) => {
   console.log("categories", categories);
   return (
     <div className={styles.container}>
-      <ASCIIBox>
+      <div className={styles.top}>
         <div className={styles.imgcontainer}>
           <img className={styles.img} src={img}></img>
         </div>
@@ -45,11 +45,13 @@ const Card = ({ link, categories, title, img, description }: ICard) => {
           <div className={styles.description}>
             <PortableText value={description} components={ptComponents} />
           </div>
-          <a href={link} target="_blank">
-            Live {`<~>`}
-          </a>
         </div>
-      </ASCIIBox>
+      </div>
+      <div className={styles.bottom}>
+        <a href={link} target="_blank" className={styles.link}>
+          Live {`<~>`}
+        </a>
+      </div>
     </div>
   );
 };

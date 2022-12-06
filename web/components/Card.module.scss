@@ -3,8 +3,12 @@
 .container{
     display: flex;
     color: $white;
+    flex-direction: column;
     font-family: 'Fira Code' serif;
-    width: 300px;
+    width: 302px;
+    border: 1px solid $gray;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .tech{
@@ -26,14 +30,19 @@
     flex-direction: column;
     gap: .5rem;
     padding: 15px;
-    a{
-        text-decoration: none;
-        color: $white;
-        border: 1px solid $pink;
-        padding: 8px;
-        width: fit-content;
-    }
+    align-content: stretch;
 }
+
+.link{
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $pink;
+    padding: 8px;
+    width: fit-content;
+    display: block;
+    margin: 15px;
+}
+
 
 .title{
     font-size: 1rem;
@@ -52,6 +61,14 @@
     font-size: .75rem;
     padding: 5px;
     border: 1px solid $pink;
+}
+
+.bottom{
+    height: fit-content;
+}
+
+.top{
+
 }
 
 .img{

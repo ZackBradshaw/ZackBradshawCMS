@@ -24,7 +24,7 @@ const ProjectsPrev = (props: { posts: IPost[] }) => {
           posts.slice(0, 3).map(
             (post: IPost) =>
               post.slug && (
-                <div className={styles.projects} key={post._id}>
+                <div key={post._id}>
                   <Card
                     categories={post.categories}
                     title={post.title}
