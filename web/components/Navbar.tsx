@@ -40,6 +40,12 @@ const Navbar = () => {
               contacts
             </Link>
           </li>
+          <li className={styles.navitem}>
+            <Link href="../assets/Resume-Zack-Bradshaw.pdf" download>
+              <span className={styles.itemIcon}>#</span>
+              resume
+            </Link>
+          </li>
         </ul>
         <div className={styles.burger}>
           <Hamburger
