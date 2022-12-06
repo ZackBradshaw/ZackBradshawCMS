@@ -33,19 +33,24 @@
 .contactInfo{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     align-items: center;
+    gap: 1rem;
+}
+
+.email{
+    text-decoration: none;
 }
 
 .socials{
     display: flex;
     flex-direction: column;
-    gap: .3rem;
+    text-align: center;
 }
 
 .socialLinks{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .copyright {
@@ -63,14 +68,10 @@
 
     .contactInfo {
         flex-direction: column;
-        text-align: center;
-        gap: 0;
     }
 
     .footerContainer{
-        width: 100%;
-        padding: 2rem;
-
+        width: 100vw;
     }
 
 }
