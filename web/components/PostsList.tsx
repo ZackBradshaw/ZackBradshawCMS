@@ -36,13 +36,15 @@ export const PostCard = ({ post }: any) => {
   } = post;
   return (
     slug && (
-      <Card
-        categories={categories}
-        title={title}
-        img={urlFor(mainImage).url()}
-        description={body}
-        link={projectLink}
-      />
+      <div>
+        <Card
+          categories={categories}
+          title={title}
+          img={urlFor(mainImage).url()}
+          description={body}
+          link={projectLink}
+        />
+      </div>
     )
   );
 };
