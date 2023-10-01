@@ -1,2 +1,9 @@
 @import 'reset';
 @import 'variables';
+a{
+    color: $pink;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

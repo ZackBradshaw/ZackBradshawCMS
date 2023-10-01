@@ -31,5 +31,10 @@
     "react-youtube": "^10.0.0",
     "styled-components": "^5.2.0",
     "youtube-id": "^1.0.0"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
