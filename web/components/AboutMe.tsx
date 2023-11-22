@@ -1,6 +1,5 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
-import ASSCIIBox from "./ASCIIBox";
 import styles from "./AboutMe.module.scss";
 
 const AboutMe = () => {
@@ -69,10 +68,6 @@ const AboutMe = () => {
 
         <h2>🎓 Continuous Learning:</h2>
         <p>My ardor for continuous learning is manifested through active involvement in dissecting and implementing cutting-edge papers 📚. A zealous contributor to open-source projects, I am committed to pushing the boundaries of what's possible 🔧.</p>
-
-
-        <h2>🚀 Future Aspirations:</h2>
-        <p>Envisioning a future where technology is the linchpin for societal advancement, I am in the nascent stages of launching an AI startup 🌱. This venture is aimed at leading a technological renaissance, addressing pressing societal challenges through AI-driven solutions 🌐.</p>
 
       </div>
     </div>
