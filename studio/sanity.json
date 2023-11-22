@@ -2,7 +2,7 @@
   "root": true,
   "api": {
     "projectId": "vg1sjyep",
-    "dataset": "production"
+    "dataset": "zack"
   },
   "project": {
     "name": "ZacksData"
