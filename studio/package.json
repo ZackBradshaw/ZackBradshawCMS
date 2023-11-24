@@ -29,7 +29,6 @@
     "react-youtube": "^10.0.0",
     "styled-components": "^5.2.0",
     "youtube-id": "^1.0.0"
-<<<<<<< Updated upstream
   },
   "browserslist": {
     "production": [
@@ -37,7 +36,5 @@
       "not ie <= 11",
       "not op_mini all"
     ]
-=======
->>>>>>> Stashed changes
   }
 }
