@@ -18,12 +18,12 @@
     "@sanity/base": "^2.35.0",
     "@sanity/cli": "^3.20.1",
     "@sanity/client": "^3.4.1",
-    "@sanity/core": "^2.35.0",
-    "@sanity/default-layout": "^2.35.0",
-    "@sanity/default-login": "^2.35.0",
-    "@sanity/desk-tool": "^2.35.1",
-    "@sanity/eslint-config-studio": "^2.0.1",
-    "@sanity/vision": "^2.35.0",
+    "@sanity/core": "^2.36.2",
+    "@sanity/default-layout": "^2.36.2",
+    "@sanity/default-login": "^2.36.2",
+    "@sanity/desk-tool": "^2.36.2",
+    "@sanity/eslint-config-studio": "^2.0.4",
+    "@sanity/vision": "^2.36.2",
     "eslint": "^8.6.0",
     "get": "^1.4.0",
     "get-youtube-id": "^1.0.1",
@@ -34,7 +34,11 @@
     "styled-components": "^5.2.0",
     "youtube-id": "^1.0.0"
   },
-  "browserslist": [
-    "defaults"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not ie <= 11",
+      "not op_mini all"
+    ]
+  }
 }
