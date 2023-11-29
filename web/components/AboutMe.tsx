@@ -48,15 +48,6 @@ const AboutMe = () => {
           <li>Be a part of our <a href="https://discord.gg/83k959dKvy" target="_blank">Agora Discord community</a> to explore, learn, and collaborate on various tech fronts.</li>
         </ul>
 
-
-        <h2>🏆 Hackathon Achievements:</h2>
-        <ul>
-          <li><a href="https://lablab.ai/event/autonomous-agents-hackathon/agora-spartans/ikigai" target="_blank">Ikigai Project - Top 25</a>: A venture into autonomous agents, blending unique AI frameworks to carve out notable solutions 🤖.</li>
-          <li><a href="https://lablab.ai/event/llama-2-hackathon-with-clarifai/agora-spartans/profit-pilot" target="_blank">Profit Pilot - Top 8</a>: Fusing AI with intuitive interfaces to drive optimized outcomes in the business landscape📈.</li>
-          <li><a href="https://zackbradshaw.itch.io/riseofagora" target="_blank">Game Jam - Rise of Agora</a>: An amalgamation of my love for game development and AI, fostering a novel gaming experience 🎮.</li>
-        </ul>
-
-
         <h2>🛠 Tech Strengths:</h2>
         <ul>
           <li>Proficient in a wide spectrum of tech domains, encompassing local and cloud computing, autonomous agent systems, and the underlying models themselves 🌐.</li>
