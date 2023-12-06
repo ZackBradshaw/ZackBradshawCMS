@@ -3,8 +3,8 @@ import Layout from "../components/Layout";
 import SectionHeader from "../components/SectionHeader";
 import styles from "../styles/projects.module.scss";
 import groq from "groq";
-import sanity from "./index";
 import { PostsList } from "../components/PostsList";
+import client from "../client";
 
 const Projects = ({ posts }) => {
 
@@ -37,7 +37,7 @@ const Projects = ({ posts }) => {
 };
 
 export async function getStaticProps() {
-  const posts = await sanity.fetch(groq`
+  const posts = await client.fetch(groq`
     *[_type == "post" && publishedAt < now()]{ "categories": coalesce(categories[]->title, []), ...} | order(publishedAt desc)
   `);
   return {
