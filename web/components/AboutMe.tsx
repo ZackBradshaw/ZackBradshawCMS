@@ -25,7 +25,6 @@ const AboutMe = () => {
         <h3>Electrical Tinkering 🔌:</h3>
         <p>The playground of circuits and semiconductors, where my creative currents find their flow. Each circuit designed, each semiconductor synced, dances to the rhythm of my electric dreams.</p>
 
-
         <h2>🌐 Community Engagements:</h2>
 
         <h3>OpenSGF:</h3>
@@ -55,7 +54,6 @@ const AboutMe = () => {
           <li>Versatile problem-solving capabilities honed through diverse project engagements 🧩.</li>
           <li>Demonstrated leadership and community-building acumen, guiding hackathon teams to victory and fostering vibrant, collaborative tech communities 🏆.</li>
         </ul>
-
 
         <h2>🎓 Continuous Learning:</h2>
         <p>My ardor for continuous learning is manifested through active involvement in dissecting and implementing cutting-edge papers 📚. A zealous contributor to open-source projects, I am committed to pushing the boundaries of what's possible 🔧.</p>
