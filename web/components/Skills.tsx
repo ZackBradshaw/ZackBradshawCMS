@@ -13,13 +13,14 @@ const Skills = () => {
     setCurrentEmbed(newEmbedUrl);
   };
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const response = await axios.get("/api/projects");
-      setProjects(response.data.data);
-    };
-    fetchProjects();
-  }, []);
+  // TODO debug
+  // useEffect(() => {
+  //   const fetchProjects = async () => {
+  //     const response = await axios.get("/api/projects");
+  //     setProjects(response.data.data);
+  //   };
+  //   fetchProjects();
+  // }, []);
 
   return (
     <>
@@ -45,13 +46,13 @@ const Skills = () => {
         </a >
       </div>
       <div>
-        {projects.map((project) => (
+        {/* {projects.map((project) => (
           <div key={project.id}>
             <a href={project.url} >
               <pre>{`</${project.name} ${project.badge}/>`}</pre>
             </a>
           </div>
-        ))}
+        ))} */}
       </div>
       <figure><embed src={currentEmbed}></embed></figure>
     </>
