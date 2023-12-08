@@ -27,6 +27,10 @@ const Projects = ({ posts }) => {
             <PostsList posts={posts} tag="Game Dev" />
           </div>
           <div className={styles.projects}>
+            <SectionHeader title="ai" />
+            <PostsList posts={posts} tag="AI" />
+          </div>
+          <div className={styles.projects}>
             <SectionHeader title="art" />
             <PostsList posts={posts} tag="Art" />
           </div>

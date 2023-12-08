@@ -49,8 +49,6 @@ const AboutMe = () => {
 
         <h2>🛠 Tech Strengths:</h2>
         <ul>
-          <li>Proficient in a wide spectrum of tech domains, encompassing local and cloud computing, autonomous agent systems, and the underlying models themselves 🌐.</li>
-          <li>Pioneering in electrical tinkering, unraveling the nuances of hardware to provide holistic tech solutions 🔌.</li>
           <li>Versatile problem-solving capabilities honed through diverse project engagements 🧩.</li>
           <li>Demonstrated leadership and community-building acumen, guiding hackathon teams to victory and fostering vibrant, collaborative tech communities 🏆.</li>
         </ul>
