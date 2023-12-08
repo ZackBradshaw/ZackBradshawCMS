@@ -7,9 +7,9 @@ import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
 import styles from "../styles/Home.module.scss";
 import Contacts from "../components/Contacts";
-import client from "../client";
 import groq from "groq";
 import { IPost } from "../interfaces/IPost";
+import client from "../client";
 
 const Index = ({ posts }: { posts: IPost[] }) => {
   console.log("posts", posts);
@@ -27,11 +27,9 @@ const Index = ({ posts }: { posts: IPost[] }) => {
 
 export async function getStaticProps() {
   const posts = await client.fetch(groq`
-      
       *[_type == "post" && publishedAt < now()]
       { "categories": categories[]->title, ...} 
-      | order(publishedAt desc 
-)
+      | order(publishedAt desc)
     `);
   return {
     props: {

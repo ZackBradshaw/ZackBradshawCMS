@@ -3,11 +3,10 @@ import Layout from "../components/Layout";
 import SectionHeader from "../components/SectionHeader";
 import styles from "../styles/projects.module.scss";
 import groq from "groq";
-import client from "../client";
 import { PostsList } from "../components/PostsList";
+import client from "../client";
 
 const Projects = ({ posts }) => {
-  // console.log("posts", posts);
 
   return (
     <Layout title="Projects | Zack.dev">
@@ -28,6 +27,10 @@ const Projects = ({ posts }) => {
             <PostsList posts={posts} tag="Game Dev" />
           </div>
           <div className={styles.projects}>
+            <SectionHeader title="ai" />
+            <PostsList posts={posts} tag="AI" />
+          </div>
+          <div className={styles.projects}>
             <SectionHeader title="art" />
             <PostsList posts={posts} tag="Art" />
           </div>
@@ -39,15 +42,13 @@ const Projects = ({ posts }) => {
 
 export async function getStaticProps() {
   const posts = await client.fetch(groq`
-      
-      *[_type == "post" && publishedAt < now()]{ "categories": coalesce(categories[]->title, []), ...} | order(publishedAt desc 
-)
-    `);
+    *[_type == "post" && publishedAt < now()]{ "categories": coalesce(categories[]->title, []), ...} | order(publishedAt desc)
+  `);
   return {
     props: {
       posts,
     },
+    revalidate: 1,
   };
 }
-
 export default Projects;
