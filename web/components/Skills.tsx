@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
-import Link from 'next-link';
-import Card from "./Card";
+// import axios from "axios";
+// import Link from 'next-link';
+// import Card from "./Card";
 import SectionHeader from "./SectionHeader";
 import styles from "./Skills.module.scss";
 
