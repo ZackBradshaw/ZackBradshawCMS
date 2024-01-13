@@ -58,9 +58,8 @@ const Navbar = () => {
         </div>
       </nav>
       <ul
-        className={`${styles.menuNav} ${
-          navbarOpen ? styles.open : styles.closed
-        }`}
+        className={`${styles.menuNav} ${navbarOpen ? styles.open : styles.closed
+          }`}
       >
         <li className={styles.navitem} onClick={() => closeMenu()}>
           <Link href="/projects" passHref>
