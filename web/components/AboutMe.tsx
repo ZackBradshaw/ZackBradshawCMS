@@ -41,7 +41,7 @@ const AboutMe = () => {
           <li>Join the conversation on <a href="https://discord.gg/qs5kZSgw6y" target="_blank">Discord</a>.</li>
         </ul>
 
-        <h3>Discord Community:</h3>
+        <h3>Agora Community:</h3>
         <ul>
           <li>Leading the official hackathon team, spearheading initiatives aimed at delving into pioneering papers, orchestrating open-source contributions, and nurturing a vibrant hub for tech enthusiasts 📜.</li>
           <li>Be a part of our <a href="https://discord.gg/83k959dKvy" target="_blank">Agora Discord community</a> to explore, learn, and collaborate on various tech fronts.</li>
