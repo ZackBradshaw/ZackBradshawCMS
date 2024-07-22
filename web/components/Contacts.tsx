@@ -41,7 +41,7 @@ const Contacts = () => {
 
           <Link href="mailto:zackzbradshaw@gmail.com" className={styles.link}>
             <img src="../assets/Email.svg" alt="" />
-            <h2>zack@zackbradshaw.com</h2>
+            <h2>zackzbradshaw@gmail.com</h2>
           </Link>
           <Link href="tel:4179558082" className={styles.link}>
             <img src="../assets/326545_call_phone_icon.svg" alt="" width={25} />
