@@ -39,7 +39,7 @@ const Contacts = () => {
             <h2>Zack Bradshaw</h2>
           </Link>
 
-          <Link href="mailto:zack@zackbradshaw.com" className={styles.link}>
+          <Link href="mailto:zackzbradshaw@gmail.com" className={styles.link}>
             <img src="../assets/Email.svg" alt="" />
             <h2>zack@zackbradshaw.com</h2>
           </Link>
